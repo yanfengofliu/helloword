@@ -1,0 +1,10 @@
+第一种方法在eclipse Marketplace中下载
+打开Eclipse --> Help --> Eclipse Marketplace --> 在Find中输入subclipse搜索 --> 找到subclipse点击install
+
+第二种方法在eclipse install new software
+打开Eclipse --> Help --> Install New Software --> 点击add按钮，输入下载地址：http://subclipse.tigris.org/update_1.10.x，点击OK
+
+第三种方法，直接下载subclipse的zip文件
+百度搜索subclipse-site-1.10.x(看自己想安装哪个版本) 
+--> 解压缩后在eclipse目录下找到dropins文件夹，进入dropins文件夹并新建一个文件夹名为svn，将features和plugins文件夹复制到svn目录下
+-->重启下Eclipse即可
