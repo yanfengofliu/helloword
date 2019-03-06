@@ -1,0 +1,25 @@
+首先设置虚拟机网络模式为桥接，直接连接物理网络；然后配置网卡文件如下；查看网卡命令使用ifconfig，
+输出第一个单词就是机器网卡名 ；我的是ens33;就不修改为ens0
+
+[root@localhost-2 ~]# vi /etc/sysconfig/network-scripts/ifcfg-ens33
+
+TYPE="Ethernet"
+BOOTPROTO="none"
+DEFROUTE="yes"
+IPV4_FAILURE_FATAL="no"
+IPV6INIT="yes"
+IPV6_AUTOCONF="yes"
+IPV6_DEFROUTE="yes"
+IPV6_FAILURE_FATAL="no"
+IPV6_ADDR_GEN_MODE="stable-privacy"
+NAME="ens33"
+UUID="3064b505-28a5-47c5-be0d-320c75262f10"
+DEVICE="ens33"
+ONBOOT="yes"
+IPADDR="192.168.43.132"
+PREFIX="24"
+GATEWAY="192.168.43.1"
+DNS1="192.168.43.1"
+IPV6_PEERDNS="yes"
+IPV6_PEERROUTES="yes"
+IPV6_PRIVACY="no"
