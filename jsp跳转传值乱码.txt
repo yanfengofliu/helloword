@@ -1,0 +1,4 @@
+首先跳转前转码
+encodeURI(encodeURI(paramname))
+跳转到的页面转码
+String str=java.net.URLDecoder.decode(request.getParameter(“paramname”) , “UTF-8”);
